@@ -4,10 +4,11 @@ title: Algorithms - Index
 ---
 
 <ol id="news-list">
-  {% for post in site.news %}
+  {% assign posts = site.news | sort: 'date' | reverse %}
+  {% for post in posts %}
   <li>
     <a href="{{ post.url }}">{{ post.title }}</a>
-    <div><small>{{ post.description }}</small></div>
+    <div><small>{{ post.date | date: "%B %e, %Y" }}</small></div>
   </li>
   {% endfor %}
 </ol>

@@ -7,7 +7,8 @@ title: Algorithms - Lectures
   {% for lecture in site.lectures %}
   <li>
     <a href="{{ lecture.url }}">{{ lecture.title }}</a>
-    <div><small>{{ lecture.description }}</small></div>
+    <div>{{ lecture.description }}</div>
+    <div><small>{{ lecture.date | date: "%B %e, %Y" }}</small></div>
   </li>
   {% endfor %}
 </ol>

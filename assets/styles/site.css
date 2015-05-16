@@ -59,11 +59,13 @@ hr {
   font-family: Lanenar;
   list-style-type: upper-roman;
   list-style-position:inside;
+  margin-bottom: 10px;
 }
 
 #news-list li {
   font-family: Lanenar;
   list-style-type: none;
+  margin-bottom: 10px;
 }
 
 .post {
