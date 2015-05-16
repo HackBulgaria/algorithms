@@ -1,15 +1,15 @@
 ---
 layout: default
-title: Slides
+title: Algorithms
 ---
 
 <div id="home">
-  <h1>jekyll-reveal <small>example slides</small></h1>
+  <h1>Algorithms</h1>
   <ul>
-    {% for slide in site.slides %}
+    {% for lecture in site.lectures %}
     <li>
-      <a class="slide-entry" href="{{ slide.url }}">{{ slide.title }}</a>
-      <small>{{ slide.description }}</small>
+      <a href="{{ lecture.url }}">{{ lecture.title }}</a>
+      <small>{{ lecture.description }}</small>
     </li>
     {% endfor %}
   </ul>

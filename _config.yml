@@ -1,9 +1,9 @@
-name: jekyll-reveal 
+name: jekyll-reveal
 markdown: redcarpet
 highlighter: pygments
 
 collections:
-  slides:
+  lectures:
     output: true
 
 defaults:
@@ -11,7 +11,7 @@ defaults:
     scope:
       path: ""
     values:
-      layout: slide
+      layout: lecture
       reveal:
         controls: true
         progress: true
