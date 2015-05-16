@@ -52,7 +52,7 @@ hr {
 
 #lectures-list, #news-list {
   text-align: center;
-  margin-left: -30px;
+  padding: 0;
 }
 
 #lectures-list li {
