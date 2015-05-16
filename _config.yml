@@ -1,8 +1,10 @@
-name: jekyll-reveal
+name: hackbulgaria-algorithms
 markdown: redcarpet
 highlighter: pygments
 
 collections:
+  posts:
+    output: true
   lectures:
     output: true
 
@@ -11,7 +13,6 @@ defaults:
     scope:
       path: ""
     values:
-      layout: lecture
       reveal:
         controls: true
         progress: true
@@ -30,10 +31,10 @@ defaults:
         mouseWheel: false
         hideAddressBar: true
         previewLinks: false
-        transition: default
+        transition: slide
         transitionSpeed: default
         backgroundTransition: default
         viewDistance: 3
         parallaxBackgroundImage:
         parallaxBackgroundSize:
-        theme: white
+        theme: lecture

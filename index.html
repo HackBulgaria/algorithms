@@ -1,18 +1,12 @@
 ---
 layout: default
-title: Algorithms
+title: Algorithms - Index
 ---
 
-<div>
-  <div id="title">
-    <h1>Algorithms</h1>
-  </div>
-  <ul>
-    {% for lecture in site.lectures %}
-    <li>
-      <a href="{{ lecture.url }}">{{ lecture.title }}</a>
-      <small>{{ lecture.description }}</small>
-    </li>
-    {% endfor %}
-  </ul>
-</div>
+<ol>
+  {% for post in site.posts %}
+  <li>
+    {{ post.title }}
+  </li>
+  {% endfor %}
+</ol>

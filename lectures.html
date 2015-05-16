@@ -1,0 +1,13 @@
+---
+layout: default
+title: Algorithms - Lectures
+---
+
+<ol id="lectures-list">
+  {% for lecture in site.lectures %}
+  <li>
+    <a href="{{ lecture.url }}">{{ lecture.title }}</a>
+    <div><small>{{ lecture.description }}</small></div>
+  </li>
+  {% endfor %}
+</ol>

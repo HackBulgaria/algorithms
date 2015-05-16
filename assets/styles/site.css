@@ -1,7 +1,62 @@
 @import url(common.css);
 
-#title {
-  font-family: Alex Brush;
-  font-size: 3em;
+header {
   text-align: center;
+}
+
+#title h1 {
+  font-family: Alex Brush;
+  font-size: 5em;
+  font-weight: normal;
+  text-transform: none;
+}
+
+hr {
+  clear: both;
+  float: none;
+  width: 50%;
+  margin: 20px auto;
+  height: 1px;
+  border: none;
+  background: #ddd;
+  background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      right bottom,
+      color-stop(0, rgb(255,255,255)),
+      color-stop(0.1, rgb(221,221,221)),
+      color-stop(0.9, rgb(221,221,221)),
+      color-stop(1, rgb(255,255,255))
+  );
+  background-image: -moz-linear-gradient(
+      left center,
+      rgb(255,255,255) 0%,
+      rgb(221,221,221) 10%,
+      rgb(221,221,221) 90%,
+      rgb(255,255,255) 100%
+  );
+}
+
+#menu a, #lectures-list a  {
+  font-family: Lanenar;
+  font-weight: normal;
+  font-size: 1.3em;
+  color: black;
+  text-transform: none;
+  text-decoration: none;
+}
+
+#menu a:hover, #lectures-list a:hover {
+  text-decoration: underline;
+}
+
+#lectures-list {
+  text-align: center;
+  margin-left: -30px;
+}
+
+#lectures-list li {
+  font-family: Lanenar;
+  list-style-type: upper-roman;
+  list-style-position:inside;
 }
