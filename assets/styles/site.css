@@ -1,0 +1,7 @@
+@import url(common.css);
+
+#title {
+  font-family: Alex Brush;
+  font-size: 3em;
+  text-align: center;
+}

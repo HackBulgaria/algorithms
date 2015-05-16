@@ -16,7 +16,7 @@ defaults:
         controls: true
         progress: true
         slideNumber: false
-        history: false
+        history: true
         keyboard: true
         overview: true
         center: true
@@ -36,4 +36,4 @@ defaults:
         viewDistance: 3
         parallaxBackgroundImage:
         parallaxBackgroundSize:
-        theme: default
+        theme: white
