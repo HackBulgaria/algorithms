@@ -37,7 +37,7 @@ hr {
   );
 }
 
-#menu a, #lectures-list a  {
+#menu a, #lectures-list a, #news-list a  {
   font-family: Lanenar;
   font-weight: normal;
   font-size: 1.3em;
@@ -46,11 +46,11 @@ hr {
   text-decoration: none;
 }
 
-#menu a:hover, #lectures-list a:hover {
+#menu a:hover, #lectures-list a:hover, #news-list a:hover {
   text-decoration: underline;
 }
 
-#lectures-list {
+#lectures-list, #news-list {
   text-align: center;
   margin-left: -30px;
 }
@@ -59,4 +59,14 @@ hr {
   font-family: Lanenar;
   list-style-type: upper-roman;
   list-style-position:inside;
+}
+
+#news-list li {
+  font-family: Lanenar;
+  list-style-type: none;
+}
+
+.post {
+  font-family: Lanenar;
+  text-align: center;
 }
