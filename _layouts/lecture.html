@@ -5,7 +5,7 @@
     <meta charset="utf-8"/>
     <link rel="stylesheet" href="/reveal.js/css/reveal.css">
     <link rel="stylesheet" href="/reveal.js/css/theme/{{ page.reveal.theme }}.css">
-    <link rel="stylesheet" href="/reveal.js/lib/css/zenburn.css">
+    <link rel="stylesheet" type="text/css" href="/assets/styles/github.css">
     <link rel="stylesheet" type="text/css" href="/assets/styles/lecture.css">
     <script>
       // If the query includes 'print-pdf' we'll use the PDF print sheet
@@ -25,6 +25,10 @@
 
     <script src="/reveal.js/lib/js/head.min.js"></script>
     <script src="/reveal.js/js/reveal.js"></script>
+    <script src="/assets/scripts/highlight.pack.js"></script>
+    <script type="text/javascript">
+hljs.initHighlightingOnLoad();
+    </script>
 
     <script>
 
@@ -59,7 +63,7 @@
       dependencies: [
         { src: '/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
           { src: '/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-        { src: '/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { window.hljs.initHighlightingOnLoad(); } },
+        { src: '/assets/scripts/highlight.js', async: true, callback: function() { window.hljs.initHighlightingOnLoad(); } },
         { src: '/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } }
       ]
 
