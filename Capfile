@@ -11,21 +11,19 @@ set :public_children, []
 
 set :keep_releases, 5
 
-task :site do
-  set :application, "algorithms"
+set :application, "algorithms"
 
-  set :user, "hack"
-  set :use_sudo, false
+set :user, "hack"
+set :use_sudo, false
 
-  set :repository, "./_site"
-  set :deploy_to, "/hack/#{application}"
+set :repository, "./_site"
+set :deploy_to, "/hack/#{application}"
 
-  before "deploy:update_code" do
-    run_locally "bundle exec jekyll build"
-  end
-
-  server ENV.fetch("server", "188.226.232.4"), :app, primary: true
+before "deploy:update_code" do
+  run_locally "bundle exec jekyll build"
 end
+
+server ENV.fetch("server", "188.226.232.4"), :app, primary: true
 
 namespace :deploy do
   task :finalize_update do
